@@ -162,8 +162,7 @@ $('.list-group').on('change', 'input[type="text"]', function() {
   $(this).replaceWith(taskSpan);
 
   // Pass task's <li> element into auditTask() to check new due date
-  auditTask($(taskSpan).closest(".list-group-item"));
-});
+  auditTask($(taskSpan).closest(".list-group-item"));});
 
 $('.card .list-group').sortable({
   connectWith: $('.card .list-group'),
